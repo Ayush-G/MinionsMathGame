@@ -1,0 +1,36 @@
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\bin\Debug\frmMinionsMath.exe.config
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\bin\Debug\frmMinionsMath.exe
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\bin\Debug\frmMinionsMath.pdb
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\bin\Debug\frmMinionsMath.xml
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.Resources.resources
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.vbproj.GenerateResource.Cache
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.exe
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.xml
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.pdb
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.MainMenu.resources
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.frmLevel.resources
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.frmEasy.resources
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.vbprojResolveAssemblyReference.cache
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.frmMedium.resources
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.frmCalc.resources
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.frmHard.resources
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\bin\Debug\frmMinionsMath.exe.config
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.exe
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.xml
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.pdb
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\bin\Debug\frmMinionsMath.exe
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\bin\Debug\frmMinionsMath.pdb
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\bin\Debug\frmMinionsMath.xml
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.vbprojResolveAssemblyReference.cache
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.frmCalc.resources
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.frmEasy.resources
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.frmHard.resources
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.frmLevel.resources
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.frmMedium.resources
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.MainMenu.resources
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.Resources.resources
+C:\Users\Total\Desktop\AyushGupta\MinionsMath\frmMinionsMath\obj\Debug\frmMinionsMath.vbproj.GenerateResource.Cache
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\bin\Debug\frmMinionsMath.exe.config
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.exe
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.xml
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.pdb

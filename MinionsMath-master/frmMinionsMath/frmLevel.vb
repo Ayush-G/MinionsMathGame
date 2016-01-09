@@ -1,10 +1,12 @@
-﻿Public Class frmLevel
-    Dim PlayerName As String
+﻿Public Module GlobalVariables
+    Public PlayerName As String
+End Module
+
+Public Class frmLevel
     Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
         PlayerName = StrConv(txtName.Text, vbProperCase)
         txtName.Text = "ENJOY THE GAME!"
         Panel1.Visible = False
-        My.Forms.frmEasy.lblPlayerName.Text = PlayerName
     End Sub
 
     Private Sub frmLevel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -35,5 +37,10 @@
         If e.KeyCode = Keys.Enter Then
             btnPlay.PerformClick()
         End If
+    End Sub
+
+    Private Sub btnShop_Click(sender As Object, e As EventArgs) Handles btnShop.Click
+        Me.Close()
+        My.Forms.frmShop.Show()
     End Sub
 End Class

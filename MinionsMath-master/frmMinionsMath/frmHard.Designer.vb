@@ -37,7 +37,7 @@ Partial Class frmHard
         Me.Num3 = New System.Windows.Forms.Label()
         Me.lblOp2 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Answer = New System.Windows.Forms.Button()
+        Me.btnSubmit = New System.Windows.Forms.Button()
         Me.txtAnswer = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Num2 = New System.Windows.Forms.Label()
@@ -45,30 +45,30 @@ Partial Class frmHard
         Me.Num1 = New System.Windows.Forms.Label()
         Me.lbl1 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.tmrRight = New System.Windows.Forms.Timer(Me.components)
+        Me.tmrLeft = New System.Windows.Forms.Timer(Me.components)
+        Me.btnCalc = New System.Windows.Forms.Button()
+        Me.picBanana2 = New System.Windows.Forms.PictureBox()
+        Me.picBanana3 = New System.Windows.Forms.PictureBox()
+        Me.picBanana4 = New System.Windows.Forms.PictureBox()
+        Me.picBanana5 = New System.Windows.Forms.PictureBox()
+        Me.picBanana6 = New System.Windows.Forms.PictureBox()
+        Me.picBanana7 = New System.Windows.Forms.PictureBox()
+        Me.picBanana8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.picBanana1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.tmrRight = New System.Windows.Forms.Timer(Me.components)
-        Me.tmrLeft = New System.Windows.Forms.Timer(Me.components)
-        Me.picBanana8 = New System.Windows.Forms.PictureBox()
-        Me.picBanana7 = New System.Windows.Forms.PictureBox()
-        Me.picBanana6 = New System.Windows.Forms.PictureBox()
-        Me.picBanana5 = New System.Windows.Forms.PictureBox()
-        Me.picBanana4 = New System.Windows.Forms.PictureBox()
-        Me.picBanana3 = New System.Windows.Forms.PictureBox()
-        Me.picBanana2 = New System.Windows.Forms.PictureBox()
-        Me.btnCalc = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
+        CType(Me.picBanana2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBanana3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBanana4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBanana5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBanana6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBanana7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBanana8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBanana1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBanana8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBanana7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBanana6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBanana5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBanana4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBanana3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.picBanana2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnQuit
@@ -88,6 +88,7 @@ Partial Class frmHard
         Me.lblPlayerScore.AutoSize = True
         Me.lblPlayerScore.BackColor = System.Drawing.Color.Transparent
         Me.lblPlayerScore.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayerScore.ForeColor = System.Drawing.Color.Black
         Me.lblPlayerScore.Location = New System.Drawing.Point(96, 45)
         Me.lblPlayerScore.Name = "lblPlayerScore"
         Me.lblPlayerScore.Size = New System.Drawing.Size(20, 23)
@@ -99,6 +100,7 @@ Partial Class frmHard
         Me.lblScore.AutoSize = True
         Me.lblScore.BackColor = System.Drawing.Color.Transparent
         Me.lblScore.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScore.ForeColor = System.Drawing.Color.Black
         Me.lblScore.Location = New System.Drawing.Point(9, 45)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(81, 23)
@@ -110,6 +112,7 @@ Partial Class frmHard
         Me.lblPlayerName.AutoSize = True
         Me.lblPlayerName.BackColor = System.Drawing.Color.Transparent
         Me.lblPlayerName.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayerName.ForeColor = System.Drawing.Color.Black
         Me.lblPlayerName.Location = New System.Drawing.Point(80, 13)
         Me.lblPlayerName.Name = "lblPlayerName"
         Me.lblPlayerName.Size = New System.Drawing.Size(55, 23)
@@ -121,6 +124,7 @@ Partial Class frmHard
         Me.lblName.AutoSize = True
         Me.lblName.BackColor = System.Drawing.Color.Transparent
         Me.lblName.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.Black
         Me.lblName.Location = New System.Drawing.Point(9, 13)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(62, 23)
@@ -139,7 +143,7 @@ Partial Class frmHard
         Me.Panel1.Controls.Add(Me.Num3)
         Me.Panel1.Controls.Add(Me.lblOp2)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.Answer)
+        Me.Panel1.Controls.Add(Me.btnSubmit)
         Me.Panel1.Controls.Add(Me.txtAnswer)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Num2)
@@ -232,14 +236,14 @@ Partial Class frmHard
         Me.Label5.TabIndex = 38
         Me.Label5.Text = ")"
         '
-        'Answer
+        'btnSubmit
         '
-        Me.Answer.Location = New System.Drawing.Point(447, 168)
-        Me.Answer.Name = "Answer"
-        Me.Answer.Size = New System.Drawing.Size(75, 23)
-        Me.Answer.TabIndex = 37
-        Me.Answer.Text = "Submit"
-        Me.Answer.UseVisualStyleBackColor = True
+        Me.btnSubmit.Location = New System.Drawing.Point(447, 168)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
+        Me.btnSubmit.TabIndex = 37
+        Me.btnSubmit.Text = "Submit"
+        Me.btnSubmit.UseVisualStyleBackColor = True
         '
         'txtAnswer
         '
@@ -308,6 +312,103 @@ Partial Class frmHard
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Solve the Problem"
         '
+        'tmrRight
+        '
+        Me.tmrRight.Interval = 10
+        '
+        'tmrLeft
+        '
+        Me.tmrLeft.Interval = 10
+        '
+        'btnCalc
+        '
+        Me.btnCalc.BackColor = System.Drawing.Color.Orange
+        Me.btnCalc.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCalc.ForeColor = System.Drawing.Color.Black
+        Me.btnCalc.Location = New System.Drawing.Point(533, 12)
+        Me.btnCalc.Name = "btnCalc"
+        Me.btnCalc.Size = New System.Drawing.Size(173, 46)
+        Me.btnCalc.TabIndex = 45
+        Me.btnCalc.Text = "Calculator"
+        Me.btnCalc.UseVisualStyleBackColor = False
+        '
+        'picBanana2
+        '
+        Me.picBanana2.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana2.Image = Global.frmMinionsMath.My.Resources.Resources.banana
+        Me.picBanana2.Location = New System.Drawing.Point(1000, 566)
+        Me.picBanana2.Name = "picBanana2"
+        Me.picBanana2.Size = New System.Drawing.Size(79, 44)
+        Me.picBanana2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBanana2.TabIndex = 44
+        Me.picBanana2.TabStop = False
+        '
+        'picBanana3
+        '
+        Me.picBanana3.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana3.Image = Global.frmMinionsMath.My.Resources.Resources.banana
+        Me.picBanana3.Location = New System.Drawing.Point(1500, 566)
+        Me.picBanana3.Name = "picBanana3"
+        Me.picBanana3.Size = New System.Drawing.Size(79, 44)
+        Me.picBanana3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBanana3.TabIndex = 43
+        Me.picBanana3.TabStop = False
+        '
+        'picBanana4
+        '
+        Me.picBanana4.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana4.Image = Global.frmMinionsMath.My.Resources.Resources.banana
+        Me.picBanana4.Location = New System.Drawing.Point(2000, 566)
+        Me.picBanana4.Name = "picBanana4"
+        Me.picBanana4.Size = New System.Drawing.Size(79, 44)
+        Me.picBanana4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBanana4.TabIndex = 42
+        Me.picBanana4.TabStop = False
+        '
+        'picBanana5
+        '
+        Me.picBanana5.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana5.Image = Global.frmMinionsMath.My.Resources.Resources.banana
+        Me.picBanana5.Location = New System.Drawing.Point(2500, 566)
+        Me.picBanana5.Name = "picBanana5"
+        Me.picBanana5.Size = New System.Drawing.Size(79, 44)
+        Me.picBanana5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBanana5.TabIndex = 41
+        Me.picBanana5.TabStop = False
+        '
+        'picBanana6
+        '
+        Me.picBanana6.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana6.Image = Global.frmMinionsMath.My.Resources.Resources.banana
+        Me.picBanana6.Location = New System.Drawing.Point(3000, 566)
+        Me.picBanana6.Name = "picBanana6"
+        Me.picBanana6.Size = New System.Drawing.Size(79, 44)
+        Me.picBanana6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBanana6.TabIndex = 40
+        Me.picBanana6.TabStop = False
+        '
+        'picBanana7
+        '
+        Me.picBanana7.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana7.Image = Global.frmMinionsMath.My.Resources.Resources.banana
+        Me.picBanana7.Location = New System.Drawing.Point(3500, 566)
+        Me.picBanana7.Name = "picBanana7"
+        Me.picBanana7.Size = New System.Drawing.Size(79, 44)
+        Me.picBanana7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBanana7.TabIndex = 39
+        Me.picBanana7.TabStop = False
+        '
+        'picBanana8
+        '
+        Me.picBanana8.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana8.Image = Global.frmMinionsMath.My.Resources.Resources.banana
+        Me.picBanana8.Location = New System.Drawing.Point(4000, 566)
+        Me.picBanana8.Name = "picBanana8"
+        Me.picBanana8.Size = New System.Drawing.Size(79, 44)
+        Me.picBanana8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBanana8.TabIndex = 38
+        Me.picBanana8.TabStop = False
+        '
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
@@ -343,108 +444,12 @@ Partial Class frmHard
         Me.PictureBox2.TabIndex = 29
         Me.PictureBox2.TabStop = False
         '
-        'tmrRight
-        '
-        Me.tmrRight.Interval = 10
-        '
-        'tmrLeft
-        '
-        Me.tmrLeft.Interval = 10
-        '
-        'picBanana8
-        '
-        Me.picBanana8.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana8.Image = Global.frmMinionsMath.My.Resources.Resources.banana
-        Me.picBanana8.Location = New System.Drawing.Point(4000, 566)
-        Me.picBanana8.Name = "picBanana8"
-        Me.picBanana8.Size = New System.Drawing.Size(79, 44)
-        Me.picBanana8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBanana8.TabIndex = 38
-        Me.picBanana8.TabStop = False
-        '
-        'picBanana7
-        '
-        Me.picBanana7.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana7.Image = Global.frmMinionsMath.My.Resources.Resources.banana
-        Me.picBanana7.Location = New System.Drawing.Point(3500, 566)
-        Me.picBanana7.Name = "picBanana7"
-        Me.picBanana7.Size = New System.Drawing.Size(79, 44)
-        Me.picBanana7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBanana7.TabIndex = 39
-        Me.picBanana7.TabStop = False
-        '
-        'picBanana6
-        '
-        Me.picBanana6.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana6.Image = Global.frmMinionsMath.My.Resources.Resources.banana
-        Me.picBanana6.Location = New System.Drawing.Point(3000, 566)
-        Me.picBanana6.Name = "picBanana6"
-        Me.picBanana6.Size = New System.Drawing.Size(79, 44)
-        Me.picBanana6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBanana6.TabIndex = 40
-        Me.picBanana6.TabStop = False
-        '
-        'picBanana5
-        '
-        Me.picBanana5.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana5.Image = Global.frmMinionsMath.My.Resources.Resources.banana
-        Me.picBanana5.Location = New System.Drawing.Point(2500, 566)
-        Me.picBanana5.Name = "picBanana5"
-        Me.picBanana5.Size = New System.Drawing.Size(79, 44)
-        Me.picBanana5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBanana5.TabIndex = 41
-        Me.picBanana5.TabStop = False
-        '
-        'picBanana4
-        '
-        Me.picBanana4.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana4.Image = Global.frmMinionsMath.My.Resources.Resources.banana
-        Me.picBanana4.Location = New System.Drawing.Point(2000, 566)
-        Me.picBanana4.Name = "picBanana4"
-        Me.picBanana4.Size = New System.Drawing.Size(79, 44)
-        Me.picBanana4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBanana4.TabIndex = 42
-        Me.picBanana4.TabStop = False
-        '
-        'picBanana3
-        '
-        Me.picBanana3.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana3.Image = Global.frmMinionsMath.My.Resources.Resources.banana
-        Me.picBanana3.Location = New System.Drawing.Point(1500, 566)
-        Me.picBanana3.Name = "picBanana3"
-        Me.picBanana3.Size = New System.Drawing.Size(79, 44)
-        Me.picBanana3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBanana3.TabIndex = 43
-        Me.picBanana3.TabStop = False
-        '
-        'picBanana2
-        '
-        Me.picBanana2.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana2.Image = Global.frmMinionsMath.My.Resources.Resources.banana
-        Me.picBanana2.Location = New System.Drawing.Point(1000, 566)
-        Me.picBanana2.Name = "picBanana2"
-        Me.picBanana2.Size = New System.Drawing.Size(79, 44)
-        Me.picBanana2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.picBanana2.TabIndex = 44
-        Me.picBanana2.TabStop = False
-        '
-        'btnCalc
-        '
-        Me.btnCalc.BackColor = System.Drawing.Color.Orange
-        Me.btnCalc.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCalc.ForeColor = System.Drawing.Color.Black
-        Me.btnCalc.Location = New System.Drawing.Point(533, 12)
-        Me.btnCalc.Name = "btnCalc"
-        Me.btnCalc.Size = New System.Drawing.Size(173, 46)
-        Me.btnCalc.TabIndex = 45
-        Me.btnCalc.Text = "Calculator"
-        Me.btnCalc.UseVisualStyleBackColor = False
-        '
         'frmHard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
+        Me.BackgroundImage = Global.frmMinionsMath.My.Resources.Resources.HardBG
         Me.ClientSize = New System.Drawing.Size(897, 625)
         Me.Controls.Add(Me.btnCalc)
         Me.Controls.Add(Me.picBanana2)
@@ -467,16 +472,16 @@ Partial Class frmHard
         Me.Text = "frmHard"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.picBanana2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBanana3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBanana4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBanana5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBanana6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBanana7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBanana8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picBanana1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBanana8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBanana7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBanana6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBanana5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBanana4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBanana3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.picBanana2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -500,7 +505,7 @@ Partial Class frmHard
     Friend WithEvents Num3 As Label
     Friend WithEvents lblOp2 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Answer As Button
+    Friend WithEvents btnSubmit As Button
     Friend WithEvents txtAnswer As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Num2 As Label

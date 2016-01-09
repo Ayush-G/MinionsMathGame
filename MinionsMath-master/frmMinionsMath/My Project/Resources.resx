@@ -118,19 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GruLab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\easy\GruLab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MinionStill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\easy\MinionStill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HardBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\HardBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Gru's_Lab_Minion_Mayhem_ride" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pics\easy\Gru's_Lab_Minion_Mayhem_ride.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Minion Walk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pics\easy\Minion Walk.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Road" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\Road.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="banana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pics\easy\banana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MinionStill" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pics\easy\MinionStill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MediumBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\easy\MediumBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GruLab" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pics\easy\GruLab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MediumBG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pics\MediumBG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

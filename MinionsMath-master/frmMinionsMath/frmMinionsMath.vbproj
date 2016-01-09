@@ -96,10 +96,28 @@
     <Compile Include="frmLevel.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmLose.Designer.vb">
+      <DependentUpon>frmLose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLose.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMedium.Designer.vb">
       <DependentUpon>frmMedium.vb</DependentUpon>
     </Compile>
     <Compile Include="frmMedium.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShop.Designer.vb">
+      <DependentUpon>frmShop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWin.Designer.vb">
+      <DependentUpon>frmWin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.vb">
@@ -114,16 +132,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="My\Resources.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmCalc.resx">
@@ -138,15 +152,23 @@
     <EmbeddedResource Include="frmLevel.resx">
       <DependentUpon>frmLevel.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLose.resx">
+      <DependentUpon>frmLose.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMedium.resx">
       <DependentUpon>frmMedium.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShop.resx">
+      <DependentUpon>frmShop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWin.resx">
+      <DependentUpon>frmWin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -177,6 +199,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pics\easy\GruLab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\Road.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\easy\MediumBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\HardBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\MediumBG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

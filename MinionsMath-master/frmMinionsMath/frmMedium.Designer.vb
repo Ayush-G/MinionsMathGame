@@ -31,7 +31,7 @@ Partial Class frmMedium
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Numerator = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Answer = New System.Windows.Forms.Button()
+        Me.btnSubmit = New System.Windows.Forms.Button()
         Me.AnsDen = New System.Windows.Forms.TextBox()
         Me.AnsNum = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -80,6 +80,7 @@ Partial Class frmMedium
         Me.lblPlayerScore.AutoSize = True
         Me.lblPlayerScore.BackColor = System.Drawing.Color.Transparent
         Me.lblPlayerScore.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayerScore.ForeColor = System.Drawing.Color.Black
         Me.lblPlayerScore.Location = New System.Drawing.Point(96, 45)
         Me.lblPlayerScore.Name = "lblPlayerScore"
         Me.lblPlayerScore.Size = New System.Drawing.Size(20, 23)
@@ -91,6 +92,7 @@ Partial Class frmMedium
         Me.lblScore.AutoSize = True
         Me.lblScore.BackColor = System.Drawing.Color.Transparent
         Me.lblScore.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScore.ForeColor = System.Drawing.Color.Black
         Me.lblScore.Location = New System.Drawing.Point(9, 45)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(81, 23)
@@ -102,6 +104,7 @@ Partial Class frmMedium
         Me.lblPlayerName.AutoSize = True
         Me.lblPlayerName.BackColor = System.Drawing.Color.Transparent
         Me.lblPlayerName.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayerName.ForeColor = System.Drawing.Color.Black
         Me.lblPlayerName.Location = New System.Drawing.Point(80, 13)
         Me.lblPlayerName.Name = "lblPlayerName"
         Me.lblPlayerName.Size = New System.Drawing.Size(55, 23)
@@ -113,6 +116,7 @@ Partial Class frmMedium
         Me.lblName.AutoSize = True
         Me.lblName.BackColor = System.Drawing.Color.Transparent
         Me.lblName.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.Black
         Me.lblName.Location = New System.Drawing.Point(9, 13)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(62, 23)
@@ -125,7 +129,7 @@ Partial Class frmMedium
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Controls.Add(Me.Numerator)
         Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.Answer)
+        Me.Panel1.Controls.Add(Me.btnSubmit)
         Me.Panel1.Controls.Add(Me.AnsDen)
         Me.Panel1.Controls.Add(Me.AnsNum)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -157,14 +161,14 @@ Partial Class frmMedium
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "___"
         '
-        'Answer
+        'btnSubmit
         '
-        Me.Answer.Location = New System.Drawing.Point(199, 71)
-        Me.Answer.Name = "Answer"
-        Me.Answer.Size = New System.Drawing.Size(75, 23)
-        Me.Answer.TabIndex = 21
-        Me.Answer.Text = "Answer"
-        Me.Answer.UseVisualStyleBackColor = True
+        Me.btnSubmit.Location = New System.Drawing.Point(199, 71)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
+        Me.btnSubmit.TabIndex = 21
+        Me.btnSubmit.Text = "Answer"
+        Me.btnSubmit.UseVisualStyleBackColor = True
         '
         'AnsDen
         '
@@ -231,7 +235,6 @@ Partial Class frmMedium
         'picBanana6
         '
         Me.picBanana6.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana6.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana6.Location = New System.Drawing.Point(3000, 566)
         Me.picBanana6.Name = "picBanana6"
         Me.picBanana6.Size = New System.Drawing.Size(79, 44)
@@ -242,7 +245,6 @@ Partial Class frmMedium
         'picBanana2
         '
         Me.picBanana2.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana2.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana2.Location = New System.Drawing.Point(1000, 566)
         Me.picBanana2.Name = "picBanana2"
         Me.picBanana2.Size = New System.Drawing.Size(79, 44)
@@ -253,7 +255,6 @@ Partial Class frmMedium
         'picBanana3
         '
         Me.picBanana3.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana3.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana3.Location = New System.Drawing.Point(1500, 566)
         Me.picBanana3.Name = "picBanana3"
         Me.picBanana3.Size = New System.Drawing.Size(79, 44)
@@ -264,7 +265,6 @@ Partial Class frmMedium
         'picBanana4
         '
         Me.picBanana4.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana4.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana4.Location = New System.Drawing.Point(2000, 566)
         Me.picBanana4.Name = "picBanana4"
         Me.picBanana4.Size = New System.Drawing.Size(79, 44)
@@ -275,7 +275,6 @@ Partial Class frmMedium
         'picBanana5
         '
         Me.picBanana5.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana5.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana5.Location = New System.Drawing.Point(2500, 566)
         Me.picBanana5.Name = "picBanana5"
         Me.picBanana5.Size = New System.Drawing.Size(79, 44)
@@ -286,7 +285,6 @@ Partial Class frmMedium
         'picBanana7
         '
         Me.picBanana7.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana7.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana7.Location = New System.Drawing.Point(3500, 566)
         Me.picBanana7.Name = "picBanana7"
         Me.picBanana7.Size = New System.Drawing.Size(79, 44)
@@ -297,7 +295,6 @@ Partial Class frmMedium
         'picBanana8
         '
         Me.picBanana8.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana8.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana8.Location = New System.Drawing.Point(4000, 566)
         Me.picBanana8.Name = "picBanana8"
         Me.picBanana8.Size = New System.Drawing.Size(79, 44)
@@ -309,7 +306,6 @@ Partial Class frmMedium
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.PictureBox3.Image = Global.frmMinionsMath.My.Resources.Resources.MinionStill
         Me.PictureBox3.Location = New System.Drawing.Point(28, 460)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(114, 153)
@@ -320,7 +316,6 @@ Partial Class frmMedium
         'picBanana1
         '
         Me.picBanana1.BackColor = System.Drawing.Color.Transparent
-        Me.picBanana1.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana1.Location = New System.Drawing.Point(497, 566)
         Me.picBanana1.Name = "picBanana1"
         Me.picBanana1.Size = New System.Drawing.Size(79, 44)
@@ -332,7 +327,6 @@ Partial Class frmMedium
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.PictureBox2.Image = Global.frmMinionsMath.My.Resources.Resources.Minion_Walk
         Me.PictureBox2.Location = New System.Drawing.Point(28, 460)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(114, 153)
@@ -401,7 +395,7 @@ Partial Class frmMedium
     Friend WithEvents picBanana6 As PictureBox
     Friend WithEvents Numerator As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Answer As Button
+    Friend WithEvents btnSubmit As Button
     Friend WithEvents AnsDen As TextBox
     Friend WithEvents AnsNum As TextBox
     Friend WithEvents Label2 As Label

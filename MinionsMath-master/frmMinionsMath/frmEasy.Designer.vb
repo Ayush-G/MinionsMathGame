@@ -314,6 +314,7 @@ Partial Class frmEasy
         Me.lblName.AutoSize = True
         Me.lblName.BackColor = System.Drawing.Color.Transparent
         Me.lblName.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.ForeColor = System.Drawing.Color.White
         Me.lblName.Location = New System.Drawing.Point(12, 13)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(62, 23)
@@ -325,6 +326,7 @@ Partial Class frmEasy
         Me.lblPlayerName.AutoSize = True
         Me.lblPlayerName.BackColor = System.Drawing.Color.Transparent
         Me.lblPlayerName.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayerName.ForeColor = System.Drawing.Color.White
         Me.lblPlayerName.Location = New System.Drawing.Point(83, 13)
         Me.lblPlayerName.Name = "lblPlayerName"
         Me.lblPlayerName.Size = New System.Drawing.Size(55, 23)
@@ -336,6 +338,7 @@ Partial Class frmEasy
         Me.lblScore.AutoSize = True
         Me.lblScore.BackColor = System.Drawing.Color.Transparent
         Me.lblScore.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblScore.ForeColor = System.Drawing.Color.White
         Me.lblScore.Location = New System.Drawing.Point(12, 45)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(81, 23)
@@ -347,6 +350,7 @@ Partial Class frmEasy
         Me.lblPlayerScore.AutoSize = True
         Me.lblPlayerScore.BackColor = System.Drawing.Color.Transparent
         Me.lblPlayerScore.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayerScore.ForeColor = System.Drawing.Color.White
         Me.lblPlayerScore.Location = New System.Drawing.Point(99, 45)
         Me.lblPlayerScore.Name = "lblPlayerScore"
         Me.lblPlayerScore.Size = New System.Drawing.Size(20, 23)

@@ -33,6 +33,7 @@ Partial Class frmLevel
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnShop = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -144,12 +145,25 @@ Partial Class frmLevel
         Me.PictureBox1.TabIndex = 23
         Me.PictureBox1.TabStop = False
         '
+        'btnShop
+        '
+        Me.btnShop.BackColor = System.Drawing.Color.Gold
+        Me.btnShop.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnShop.ForeColor = System.Drawing.Color.Black
+        Me.btnShop.Location = New System.Drawing.Point(475, 12)
+        Me.btnShop.Name = "btnShop"
+        Me.btnShop.Size = New System.Drawing.Size(173, 46)
+        Me.btnShop.TabIndex = 25
+        Me.btnShop.Text = "Shop"
+        Me.btnShop.UseVisualStyleBackColor = False
+        '
         'frmLevel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSkyBlue
         Me.ClientSize = New System.Drawing.Size(831, 517)
+        Me.Controls.Add(Me.btnShop)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnHard)
@@ -177,4 +191,5 @@ Partial Class frmLevel
     Friend WithEvents btnEasy As Button
     Friend WithEvents lblTitle As Label
     Friend WithEvents btnQuit As Button
+    Friend WithEvents btnShop As Button
 End Class

@@ -27,6 +27,7 @@ Partial Class frmWin
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblPlayerScore = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnShop = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -46,7 +47,7 @@ Partial Class frmWin
         Me.btnQuit.BackColor = System.Drawing.Color.White
         Me.btnQuit.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnQuit.ForeColor = System.Drawing.Color.Black
-        Me.btnQuit.Location = New System.Drawing.Point(431, 448)
+        Me.btnQuit.Location = New System.Drawing.Point(431, 491)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(173, 46)
         Me.btnQuit.TabIndex = 32
@@ -86,12 +87,25 @@ Partial Class frmWin
         Me.Label2.TabIndex = 34
         Me.Label2.Text = "Bananas Earned:"
         '
+        'btnShop
+        '
+        Me.btnShop.BackColor = System.Drawing.Color.Gold
+        Me.btnShop.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnShop.ForeColor = System.Drawing.Color.Black
+        Me.btnShop.Location = New System.Drawing.Point(431, 439)
+        Me.btnShop.Name = "btnShop"
+        Me.btnShop.Size = New System.Drawing.Size(173, 46)
+        Me.btnShop.TabIndex = 36
+        Me.btnShop.Text = "Shop"
+        Me.btnShop.UseVisualStyleBackColor = False
+        '
         'frmWin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LimeGreen
         Me.ClientSize = New System.Drawing.Size(1046, 790)
+        Me.Controls.Add(Me.btnShop)
         Me.Controls.Add(Me.lblPlayerScore)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
@@ -109,4 +123,5 @@ Partial Class frmWin
     Friend WithEvents Label1 As Label
     Friend WithEvents lblPlayerScore As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents btnShop As Button
 End Class

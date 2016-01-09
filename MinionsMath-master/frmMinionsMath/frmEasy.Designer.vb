@@ -178,7 +178,7 @@ Partial Class frmEasy
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.PictureBox2.Image = Global.frmMinionsMath.My.Resources.Resources.Minion_Walk
+        Me.PictureBox2.Image = Global.frmMinionsMath.My.Resources.Resources.MinionWalk
         Me.PictureBox2.Location = New System.Drawing.Point(31, 460)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(114, 153)
@@ -201,14 +201,14 @@ Partial Class frmEasy
         Me.Panel1.Controls.Add(Me.RadioButton1)
         Me.Panel1.Location = New System.Drawing.Point(12, 77)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(864, 238)
+        Me.Panel1.Size = New System.Drawing.Size(879, 238)
         Me.Panel1.TabIndex = 11
         '
         'picShape
         '
         Me.picShape.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.picShape.BackColor = System.Drawing.Color.Black
-        Me.picShape.Location = New System.Drawing.Point(26, 16)
+        Me.picShape.Location = New System.Drawing.Point(33, 16)
         Me.picShape.Name = "picShape"
         Me.picShape.Size = New System.Drawing.Size(200, 200)
         Me.picShape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage

@@ -1,19 +1,20 @@
 ﻿Public Class frmEasy
-    Dim RandomImage As Integer
+    Dim RandomImage As Integer 'Dims variables
     Dim lvlScore As Integer
     Dim lvlWrong As Integer
     Private Sub frmEasy_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Randomize()
-        Me.AutoScroll = False
-        PictureBox3.Visible = True
-        Panel1.Visible = False
-        Me.KeyPreview = True
-        lblPlayerName.Text = PlayerName
+        Me.AutoScroll = False 'So that there is no scroll bar
+        PictureBox3.Visible = True 'Still minion
+        Panel1.Visible = False 'no question visible
+        Me.KeyPreview = True 'keys usable
+        lblPlayerScore.Text = Score 'updates player score
+        lblPlayerName.Text = PlayerName 'player name in label
     End Sub
 
     Private Sub frmEasy_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
-        PictureBox3.Visible = False
-        If e.KeyCode = Keys.D Then
+        PictureBox3.Visible = False 'moving minion
+        If e.KeyCode = Keys.D Then 'keys start timer corresponding to direction
             tmrRight.Start()
             tmrLeft.Stop()
         ElseIf e.KeyCode = Keys.A
@@ -23,8 +24,8 @@
     End Sub
 
     Private Sub frmEasy_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
-        PictureBox3.Visible = True
-        If e.KeyCode = Keys.A Then
+        PictureBox3.Visible = True 'shows still minion
+        If e.KeyCode = Keys.A Then 'keys stop timer corresponding to direction
             tmrLeft.Stop()
         End If
         If e.KeyCode = Keys.D Then
@@ -34,10 +35,11 @@
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+        'checks answer from image
         If RandomImage = 0 Then
             If RadioButton1.Checked = True Then
                 lvlScore += 1
-                If UpDblPts = True Then
+                If UpDblPts = True Then 'sees if you have upgrade for double points, awards accordingly
                     Score += 2
                 Else
                     Score += 1
@@ -193,14 +195,14 @@
         End If
 
 
-        Me.KeyPreview = True
+        Me.KeyPreview = True 'reenable keys, question gone, score added to label
         Panel1.Visible = False
         lblPlayerScore.Text = Score
     End Sub
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
-        Me.Close()
-        My.Forms.MainMenu.Show()
+        Me.Close() 'closes instead of hide to not keep previous stats
+        My.Forms.MainMenu.Show() 'goes to main menu
     End Sub
 
     Private Sub tmrRight_Tick(sender As Object, e As EventArgs) Handles tmrRight.Tick
@@ -225,7 +227,7 @@
             picBanana8.Left -= 1
         End If
 
-        'Collision Check
+        'Collision Check, generates question
         If PictureBox2.Bounds.IntersectsWith(picBanana1.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana2.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana3.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana4.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana5.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana6.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana7.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana8.Bounds) Then
             Me.KeyPreview = False
             PictureBox3.Visible = True
@@ -262,7 +264,7 @@
         picBanana6.Left += 3
         picBanana7.Left += 3
         picBanana8.Left += 3
-        'Collision Check
+        'Collision Check, generates question
         If PictureBox2.Bounds.IntersectsWith(picBanana1.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana2.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana3.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana4.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana5.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana6.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana7.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana8.Bounds) Then
             Me.KeyPreview = False
             tmrRight.Enabled = False

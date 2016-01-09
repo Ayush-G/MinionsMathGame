@@ -13,4 +13,9 @@
     Private Sub frmLose_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblPlayerScore.Text = Score
     End Sub
+
+    Private Sub btnShop_Click(sender As Object, e As EventArgs) Handles btnShop.Click
+        Me.Close()
+        My.Forms.frmShop.Show() 'takes you to the shop
+    End Sub
 End Class

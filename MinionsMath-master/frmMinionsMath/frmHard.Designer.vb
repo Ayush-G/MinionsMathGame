@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmHard
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmHard
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.btnQuit = New System.Windows.Forms.Button()
@@ -86,7 +86,7 @@ Partial Class frmHard
         'lblPlayerScore
         '
         Me.lblPlayerScore.AutoSize = True
-        Me.lblPlayerScore.BackColor = System.Drawing.Color.Transparent
+        Me.lblPlayerScore.BackColor = System.Drawing.Color.White
         Me.lblPlayerScore.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayerScore.ForeColor = System.Drawing.Color.Black
         Me.lblPlayerScore.Location = New System.Drawing.Point(96, 45)
@@ -98,7 +98,7 @@ Partial Class frmHard
         'lblScore
         '
         Me.lblScore.AutoSize = True
-        Me.lblScore.BackColor = System.Drawing.Color.Transparent
+        Me.lblScore.BackColor = System.Drawing.Color.White
         Me.lblScore.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblScore.ForeColor = System.Drawing.Color.Black
         Me.lblScore.Location = New System.Drawing.Point(9, 45)
@@ -110,7 +110,7 @@ Partial Class frmHard
         'lblPlayerName
         '
         Me.lblPlayerName.AutoSize = True
-        Me.lblPlayerName.BackColor = System.Drawing.Color.Transparent
+        Me.lblPlayerName.BackColor = System.Drawing.Color.White
         Me.lblPlayerName.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayerName.ForeColor = System.Drawing.Color.Black
         Me.lblPlayerName.Location = New System.Drawing.Point(80, 13)
@@ -122,7 +122,7 @@ Partial Class frmHard
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.BackColor = System.Drawing.Color.Transparent
+        Me.lblName.BackColor = System.Drawing.Color.White
         Me.lblName.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblName.ForeColor = System.Drawing.Color.Black
         Me.lblName.Location = New System.Drawing.Point(9, 13)
@@ -153,7 +153,7 @@ Partial Class frmHard
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(9, 77)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(864, 235)
+        Me.Panel1.Size = New System.Drawing.Size(879, 235)
         Me.Panel1.TabIndex = 32
         '
         'Label12
@@ -436,7 +436,7 @@ Partial Class frmHard
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.PictureBox2.Image = Global.frmMinionsMath.My.Resources.Resources.Minion_Walk
+        Me.PictureBox2.Image = Global.frmMinionsMath.My.Resources.Resources.MinionWalk
         Me.PictureBox2.Location = New System.Drawing.Point(28, 460)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(114, 153)

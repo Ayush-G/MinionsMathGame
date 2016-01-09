@@ -1,30 +1,30 @@
 ﻿Public Class frmHard
-    Dim lvlScore As Integer
+    Dim lvlScore As Integer 'dim variables
     Dim lvlWrong As Integer
-    Dim rng1, rng2, rng3, rng4, rng5 As Integer
+    Dim rng1, rng2, rng3, rng4, rng5 As Integer 'random numbers
     Dim sec1 As Long
     Dim sec2 As Long
-    Dim shtAns1, shtAns2, shtAns3 As Short
-    Dim rngOp1, rngOp2, rngOp3 As Integer
-    Dim a, b As Integer
-
+    Dim shtAns1, shtAns2, shtAns3 As Short 'evaluation variables
+    Dim rngOp1, rngOp2, rngOp3 As Integer 'operations
+    Dim a, b As Integer 'always divisible
+    Dim charactersAllowed As String = "1234567890-" 'allowed textbox characters
     Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
-        My.Forms.frmCalc.Show()
+        My.Forms.frmCalc.Show() 'integrated calculator
     End Sub
 
-    Dim charactersAllowed As String = "1234567890"
     Private Sub frmEasy_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Randomize()
-        Me.AutoScroll = False
-        PictureBox3.Visible = True
-        Panel1.Visible = False
-        Me.KeyPreview = True
-        lblPlayerName.Text = PlayerName
+        Me.AutoScroll = False 'no scroll
+        PictureBox3.Visible = True 'no walking minion
+        Panel1.Visible = False ' no question
+        Me.KeyPreview = True ' keys enabled
+        lblPlayerScore.Text = Score 'updates player score
+        lblPlayerName.Text = PlayerName 'player name entered
     End Sub
 
     Private Sub frmEasy_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
-        PictureBox3.Visible = False
-        If e.KeyCode = Keys.D Then
+        PictureBox3.Visible = False 'walking animation
+        If e.KeyCode = Keys.D Then 'starts timer based on key down
             tmrRight.Start()
             tmrLeft.Stop()
         ElseIf e.KeyCode = Keys.A
@@ -34,8 +34,8 @@
     End Sub
 
     Private Sub frmEasy_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
-        PictureBox3.Visible = True
-        If e.KeyCode = Keys.A Then
+        PictureBox3.Visible = True 'still minion
+        If e.KeyCode = Keys.A Then 'stops timers
             tmrLeft.Stop()
         End If
         If e.KeyCode = Keys.D Then
@@ -45,7 +45,7 @@
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        'Solve
+        'Solves the problem
         If lblOp1.Text = "+" Then
             shtAns1 = rng1 + rng2
         ElseIf lblOp1.Text = "-" Then
@@ -74,20 +74,22 @@
         ElseIf lblOp2.Text = "x" Then
             shtAns3 = shtAns1 * shtAns2
         End If
-        'Check
-        If IsNumeric(txtAnswer.Text) Then
-            If txtAnswer.Text = shtAns3 Then
-                Score = Score + 1
-                txtAnswer.Text = ""
-                lblPlayerScore.Text = Score
+        'Checks user's answer
+        If txtAnswer.Text = shtAns3 Then
+            If UpDblPts = True Then 'awards points based on upgrades bought
+                Score += 2
             Else
-                txtAnswer.Text = ""
-                Score = Score - 1
-                lblPlayerScore.Text = Score
+                Score += 1
+                End If
+            Else
+                lvlWrong += 1
+                If UpDblPts = True Then
+                    Score -= 2
+                Else
+                    Score -= 1
+                End If
             End If
-        Else
-            txtAnswer.Text = ""
-        End If
+
         ' Points given based on upgrades, then pictures move to avoid walking into them again
         If UpWinPts = True Then
             If lvlScore = 3 Then
@@ -132,48 +134,48 @@
                 picBanana8.Left -= 200
             End If
         End If
-        Me.KeyPreview = True
-        Panel1.Visible = False
-        lblPlayerScore.Text = Score
+        Me.KeyPreview = True 'keys reenabled
+        Panel1.Visible = False 'no question appears
+        lblPlayerScore.Text = Score 'score updated
     End Sub
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
-        Me.Close()
-        My.Forms.MainMenu.Show()
+        Me.Close() 'close level
+        My.Forms.MainMenu.Show() 'return to main menu
     End Sub
 
     Private Sub tmrRight_Tick(sender As Object, e As EventArgs) Handles tmrRight.Tick
         'Move to the right by moving pictures to left
         If UpSpeed = True Then
-            picBanana1.Left -= 3
-            picBanana2.Left -= 3
-            picBanana3.Left -= 3
-            picBanana4.Left -= 3
-            picBanana5.Left -= 3
-            picBanana6.Left -= 3
-            picBanana7.Left -= 3
-            picBanana8.Left -= 3
+            picBanana1.Left -= 6
+            picBanana2.Left -= 6
+            picBanana3.Left -= 6
+            picBanana4.Left -= 6
+            picBanana5.Left -= 6
+            picBanana6.Left -= 6
+            picBanana7.Left -= 6
+            picBanana8.Left -= 6
         Else
-            picBanana1.Left -= 1
-            picBanana2.Left -= 1
-            picBanana3.Left -= 1
-            picBanana4.Left -= 1
-            picBanana5.Left -= 1
-            picBanana6.Left -= 1
-            picBanana7.Left -= 1
-            picBanana8.Left -= 1
+            picBanana1.Left -= 4
+            picBanana2.Left -= 4
+            picBanana3.Left -= 4
+            picBanana4.Left -= 4
+            picBanana5.Left -= 4
+            picBanana6.Left -= 4
+            picBanana7.Left -= 4
+            picBanana8.Left -= 4
         End If
 
         'Collision Check
         If PictureBox2.Bounds.IntersectsWith(picBanana1.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana2.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana3.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana4.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana5.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana6.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana7.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana8.Bounds) Then
-            Me.KeyPreview = False
-            PictureBox3.Visible = True
-            tmrLeft.Enabled = False
+            Me.KeyPreview = False 'keys disabled
+            PictureBox3.Visible = True 'still minion
+            tmrLeft.Enabled = False 'timers stopped
             tmrRight.Enabled = False
-            Panel1.Visible = True
-            txtAnswer.Focus()
-            txtAnswer.Text = ""
-            rng1 = CInt(Int(9 * Rnd()) + 1)
+            Panel1.Visible = True 'question visible
+            txtAnswer.Focus() 'focus on textbox for easy answering
+            txtAnswer.Text = "" 'clear textbox
+            rng1 = CInt(Int(9 * Rnd()) + 1) 'generate randoms
             rng2 = CInt(Int(9 * Rnd()) + 1)
             rng3 = CInt(Int(9 * Rnd()) + 1)
             rng4 = CInt(Int(9 * Rnd()) + 1)
@@ -182,7 +184,7 @@
             rngOp2 = CInt(Int(3 * Rnd()) + 1)
             rngOp3 = CInt(Int(4 * Rnd()) + 1)
 
-            If rngOp1 = 1 Then
+            If rngOp1 = 1 Then 'display proper operations
                 lblOp1.Text = "+"
             ElseIf rngOp1 = 2
                 lblOp1.Text = "-"
@@ -190,7 +192,7 @@
                 lblOp1.Text = "x"
             ElseIf rngOp1 = 4
                 lblOp1.Text = "÷"
-                a = rng1
+                a = rng1 'make sure it is divisible
                 rng1 = a * rng2
             End If
 
@@ -210,11 +212,11 @@
                 lblOp3.Text = "x"
             ElseIf rngOp3 = 4
                 lblOp3.Text = "÷"
-                b = rng4
+                b = rng4 'make sure it is divisible
                 rng4 = b * rng5
             End If
 
-            Num1.Text = rng1
+            Num1.Text = rng1 'shows numbers
             Num2.Text = rng2
             Num3.Text = rng3
             Num4.Text = rng4
@@ -225,24 +227,37 @@
 
     Private Sub tmrLeft_Tick(sender As Object, e As EventArgs) Handles tmrLeft.Tick
         'Move to the left by moving pictures to right
-        picBanana1.Left += 3
-        picBanana2.Left += 3
-        picBanana3.Left += 3
-        picBanana4.Left += 3
-        picBanana5.Left += 3
-        picBanana6.Left += 3
-        picBanana7.Left += 3
-        picBanana8.Left += 3
+
+        If UpSpeed = True Then
+            picBanana1.Left += 6
+            picBanana2.Left += 6
+            picBanana3.Left += 6
+            picBanana4.Left += 6
+            picBanana5.Left += 6
+            picBanana6.Left += 6
+            picBanana7.Left += 6
+            picBanana8.Left += 6
+        Else
+            picBanana1.Left += 4
+            picBanana2.Left += 4
+            picBanana3.Left += 4
+            picBanana4.Left += 4
+            picBanana5.Left += 4
+            picBanana6.Left += 4
+            picBanana7.Left += 4
+            picBanana8.Left += 4
+        End If
+
         'Collision Check
         If PictureBox2.Bounds.IntersectsWith(picBanana1.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana2.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana3.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana4.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana5.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana6.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana7.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana8.Bounds) Then
-            Me.KeyPreview = False
-            tmrRight.Enabled = False
+            Me.KeyPreview = False 'no keys
+            tmrRight.Enabled = False 'stop timers
             tmrLeft.Enabled = False
-            PictureBox3.Visible = False
-            Panel1.Visible = True
-            txtAnswer.Focus()
-            txtAnswer.Text = ""
-            rng1 = CInt(Int(9 * Rnd()) + 1)
+            PictureBox3.Visible = False 'still minion
+            Panel1.Visible = True 'question shown
+            txtAnswer.Focus() 'easy question answering
+            txtAnswer.Text = "" 'clear textbox
+            rng1 = CInt(Int(9 * Rnd()) + 1) 'random numbers and operations
             rng2 = CInt(Int(9 * Rnd()) + 1)
             rng3 = CInt(Int(9 * Rnd()) + 1)
             rng4 = CInt(Int(9 * Rnd()) + 1)
@@ -251,7 +266,7 @@
             rngOp2 = CInt(Int(3 * Rnd()) + 1)
             rngOp3 = CInt(Int(4 * Rnd()) + 1)
 
-            If rngOp1 = 1 Then
+            If rngOp1 = 1 Then 'shows proper operations
                 lblOp1.Text = "+"
             ElseIf rngOp1 = 2
                 lblOp1.Text = "-"
@@ -259,7 +274,7 @@
                 lblOp1.Text = "x"
             ElseIf rngOp1 = 4
                 lblOp1.Text = "÷"
-                a = rng1
+                a = rng1 'ensures number is divisible
                 rng1 = a * rng2
             End If
 
@@ -279,11 +294,11 @@
                 lblOp3.Text = "x"
             ElseIf rngOp3 = 4
                 lblOp3.Text = "÷"
-                b = rng4
+                b = rng4 'ensures number is divisible
                 rng4 = b * rng5
             End If
 
-            Num1.Text = rng1
+            Num1.Text = rng1 'shows numbers
             Num2.Text = rng2
             Num3.Text = rng3
             Num4.Text = rng4
@@ -305,5 +320,10 @@
         Next
         txtAnswer.Text = theText
         txtAnswer.Select(SelectionIndex - Change, 0)
+    End Sub
+    Private Sub txtAnswer_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtAnswer.KeyDown
+        If e.KeyCode = Keys.Enter Then 'able to click enter to submit answer
+            btnSubmit.PerformClick()
+        End If
     End Sub
 End Class

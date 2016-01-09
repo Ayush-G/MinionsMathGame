@@ -31,6 +31,7 @@ Partial Class MainMenu
         'lblTitle
         '
         Me.lblTitle.AutoSize = True
+        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
         Me.lblTitle.Font = New System.Drawing.Font("Calibri", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitle.Location = New System.Drawing.Point(301, 57)
         Me.lblTitle.Name = "lblTitle"
@@ -79,6 +80,8 @@ Partial Class MainMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.BackgroundImage = Global.frmMinionsMath.My.Resources.Resources._1651529
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(967, 607)
         Me.Controls.Add(Me.btnShop)
         Me.Controls.Add(Me.Button2)

@@ -1,23 +1,24 @@
 ﻿Public Class frmMedium
-    Dim Num As Short
+    Dim Num As Short 'dims variables
     Dim Den As Short
     Dim TallyNum As Short
     Dim lvlScore As Integer
     Dim lvlWrong As Integer
-    Dim charactersAllowed As String = "1234567890"
+    Dim charactersAllowed As String = "1234567890" 'characters permitted in textboxes
     Private Sub frmEasy_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Randomize()
-        Me.AutoScroll = False
-        PictureBox3.Visible = True
-        Panel1.Visible = False
-        Me.KeyPreview = True
-        lblPlayerName.Text = PlayerName
-        Me.Focus()
+        Me.AutoScroll = False 'no scrolling
+        PictureBox3.Visible = True 'still minion picture
+        Panel1.Visible = False 'no question
+        Me.KeyPreview = True ' keys enabled
+        lblPlayerName.Text = PlayerName 'name shown
+        lblPlayerScore.Text = Score 'updates player score
+        Me.Focus() 'focused on the form so you don't type in hidden textboxes :P
     End Sub
 
     Private Sub frmEasy_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
-        PictureBox3.Visible = False
-        If e.KeyCode = Keys.D Then
+        PictureBox3.Visible = False 'walking minion shown
+        If e.KeyCode = Keys.D Then 'keys start the timer for direction, respectively
             tmrRight.Start()
             tmrLeft.Stop()
         ElseIf e.KeyCode = Keys.A
@@ -27,8 +28,8 @@
     End Sub
 
     Private Sub frmEasy_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
-        PictureBox3.Visible = True
-        If e.KeyCode = Keys.A Then
+        PictureBox3.Visible = True ' walking minion animation disappears
+        If e.KeyCode = Keys.A Then ' keys stop timer
             tmrLeft.Stop()
         End If
         If e.KeyCode = Keys.D Then
@@ -38,9 +39,9 @@
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        If Num / Den = AnsNum.Text / AnsDen.Text Then
+        If Num / Den = AnsNum.Text / AnsDen.Text Then 'checks answer
             lvlScore += 1
-            If UpDblPts = True Then
+            If UpDblPts = True Then 'awards score based on level of upgrades
                 Score += 2
             Else
                 Score += 1
@@ -99,15 +100,15 @@
             End If
         End If
 
-        Me.Focus()
-        Me.KeyPreview = True
-        Panel1.Visible = False
-        lblPlayerScore.Text = Score
+        Me.Focus() 'refocus to form
+        Me.KeyPreview = True 'keys enabled
+        Panel1.Visible = False 'question panel disappears
+        lblPlayerScore.Text = Score 'player's score updated
     End Sub
 
     Private Sub btnQuit_Click(sender As Object, e As EventArgs) Handles btnQuit.Click
-        Me.Close()
-        My.Forms.MainMenu.Show()
+        Me.Close() 'close level
+        My.Forms.MainMenu.Show() ' go to main menu
     End Sub
 
     Private Sub tmrRight_Tick(sender As Object, e As EventArgs) Handles tmrRight.Tick
@@ -132,7 +133,7 @@
             picBanana8.Left -= 4
         End If
 
-        'Collision Check
+        'Collision Check and generates question
         If PictureBox2.Bounds.IntersectsWith(picBanana1.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana2.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana3.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana4.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana5.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana6.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana7.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana8.Bounds) Then
             Me.KeyPreview = False
             PictureBox3.Visible = True
@@ -172,7 +173,7 @@
             picBanana8.Left += 4
         End If
 
-        'Collision Check
+        'Collision Check and generates question
         If PictureBox2.Bounds.IntersectsWith(picBanana1.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana2.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana3.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana4.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana5.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana6.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana7.Bounds) Or PictureBox2.Bounds.IntersectsWith(picBanana8.Bounds) Then
             Me.KeyPreview = False
             tmrRight.Enabled = False
@@ -226,13 +227,13 @@
     End Sub
 
     Private Sub AnsNum_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles AnsNum.KeyDown
-        If e.KeyCode = Keys.Enter Then
+        If e.KeyCode = Keys.Enter Then 'able to click enter to submit answer
             btnSubmit.PerformClick()
         End If
     End Sub
 
     Private Sub AnsDen_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles AnsDen.KeyDown
-        If e.KeyCode = Keys.Enter Then
+        If e.KeyCode = Keys.Enter Then 'able to click enter to submit answer
             btnSubmit.PerformClick()
         End If
     End Sub

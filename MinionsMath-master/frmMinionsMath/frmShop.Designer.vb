@@ -44,7 +44,7 @@ Partial Class frmShop
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Helvetica", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(74, 23)
+        Me.Label1.Location = New System.Drawing.Point(18, 24)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(613, 56)
         Me.Label1.TabIndex = 0
@@ -132,8 +132,8 @@ Partial Class frmShop
         '
         Me.Button4.BackColor = System.Drawing.Color.Green
         Me.Button4.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.Black
-        Me.Button4.Location = New System.Drawing.Point(28, 597)
+        Me.Button4.ForeColor = System.Drawing.Color.White
+        Me.Button4.Location = New System.Drawing.Point(79, 588)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(146, 59)
         Me.Button4.TabIndex = 19
@@ -145,7 +145,7 @@ Partial Class frmShop
         Me.Button5.BackColor = System.Drawing.Color.DarkBlue
         Me.Button5.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(180, 597)
+        Me.Button5.Location = New System.Drawing.Point(231, 588)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(146, 59)
         Me.Button5.TabIndex = 20
@@ -156,8 +156,8 @@ Partial Class frmShop
         '
         Me.Button6.BackColor = System.Drawing.Color.Crimson
         Me.Button6.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.ForeColor = System.Drawing.Color.Black
-        Me.Button6.Location = New System.Drawing.Point(332, 597)
+        Me.Button6.ForeColor = System.Drawing.Color.White
+        Me.Button6.Location = New System.Drawing.Point(383, 588)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(146, 59)
         Me.Button6.TabIndex = 21
@@ -213,7 +213,7 @@ Partial Class frmShop
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gold
-        Me.ClientSize = New System.Drawing.Size(747, 668)
+        Me.ClientSize = New System.Drawing.Size(635, 668)
         Me.Controls.Add(Me.lblPlayerName)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.lblPlayerScore)

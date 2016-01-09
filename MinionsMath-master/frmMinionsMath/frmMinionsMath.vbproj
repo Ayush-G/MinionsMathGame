@@ -132,12 +132,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="My\Resources.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmCalc.resx">
@@ -171,6 +175,7 @@
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +216,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pics\MediumBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MediumBack.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

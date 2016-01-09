@@ -27,6 +27,7 @@ Partial Class frmLose
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblPlayerScore = New System.Windows.Forms.Label()
+        Me.btnShop = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -45,7 +46,7 @@ Partial Class frmLose
         Me.btnQuit.BackColor = System.Drawing.Color.White
         Me.btnQuit.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnQuit.ForeColor = System.Drawing.Color.Black
-        Me.btnQuit.Location = New System.Drawing.Point(348, 394)
+        Me.btnQuit.Location = New System.Drawing.Point(348, 446)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(173, 46)
         Me.btnQuit.TabIndex = 29
@@ -69,7 +70,7 @@ Partial Class frmLose
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Helvetica", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(170, 237)
+        Me.Label2.Location = New System.Drawing.Point(201, 235)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(418, 56)
         Me.Label2.TabIndex = 31
@@ -80,11 +81,23 @@ Partial Class frmLose
         Me.lblPlayerScore.AutoSize = True
         Me.lblPlayerScore.Font = New System.Drawing.Font("Helvetica", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayerScore.ForeColor = System.Drawing.Color.White
-        Me.lblPlayerScore.Location = New System.Drawing.Point(584, 237)
+        Me.lblPlayerScore.Location = New System.Drawing.Point(615, 235)
         Me.lblPlayerScore.Name = "lblPlayerScore"
         Me.lblPlayerScore.Size = New System.Drawing.Size(51, 56)
         Me.lblPlayerScore.TabIndex = 32
         Me.lblPlayerScore.Text = "0"
+        '
+        'btnShop
+        '
+        Me.btnShop.BackColor = System.Drawing.Color.Gold
+        Me.btnShop.Font = New System.Drawing.Font("Calibri", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnShop.ForeColor = System.Drawing.Color.Black
+        Me.btnShop.Location = New System.Drawing.Point(348, 394)
+        Me.btnShop.Name = "btnShop"
+        Me.btnShop.Size = New System.Drawing.Size(173, 46)
+        Me.btnShop.TabIndex = 33
+        Me.btnShop.Text = "Shop"
+        Me.btnShop.UseVisualStyleBackColor = False
         '
         'frmLose
         '
@@ -92,6 +105,7 @@ Partial Class frmLose
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkRed
         Me.ClientSize = New System.Drawing.Size(916, 771)
+        Me.Controls.Add(Me.btnShop)
         Me.Controls.Add(Me.lblPlayerScore)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
@@ -109,4 +123,5 @@ Partial Class frmLose
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents lblPlayerScore As Label
+    Friend WithEvents btnShop As Button
 End Class

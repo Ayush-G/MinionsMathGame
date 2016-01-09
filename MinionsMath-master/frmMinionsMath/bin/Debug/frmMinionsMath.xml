@@ -27,22 +27,27 @@ frmMinionsMath
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:frmMinionsMath.My.Resources.Resources.Gru_s_Lab_Minion_Mayhem_ride">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:frmMinionsMath.My.Resources.Resources.GruLab">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:frmMinionsMath.My.Resources.Resources.Minion_Walk">
+<member name="P:frmMinionsMath.My.Resources.Resources.HardBG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:frmMinionsMath.My.Resources.Resources.MediumBG">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:frmMinionsMath.My.Resources.Resources.MinionStill">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:frmMinionsMath.My.Resources.Resources.MinionWalk">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

@@ -235,6 +235,7 @@ Partial Class frmMedium
         'picBanana6
         '
         Me.picBanana6.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana6.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana6.Location = New System.Drawing.Point(3000, 566)
         Me.picBanana6.Name = "picBanana6"
         Me.picBanana6.Size = New System.Drawing.Size(79, 44)
@@ -245,6 +246,7 @@ Partial Class frmMedium
         'picBanana2
         '
         Me.picBanana2.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana2.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana2.Location = New System.Drawing.Point(1000, 566)
         Me.picBanana2.Name = "picBanana2"
         Me.picBanana2.Size = New System.Drawing.Size(79, 44)
@@ -255,6 +257,7 @@ Partial Class frmMedium
         'picBanana3
         '
         Me.picBanana3.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana3.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana3.Location = New System.Drawing.Point(1500, 566)
         Me.picBanana3.Name = "picBanana3"
         Me.picBanana3.Size = New System.Drawing.Size(79, 44)
@@ -265,6 +268,7 @@ Partial Class frmMedium
         'picBanana4
         '
         Me.picBanana4.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana4.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana4.Location = New System.Drawing.Point(2000, 566)
         Me.picBanana4.Name = "picBanana4"
         Me.picBanana4.Size = New System.Drawing.Size(79, 44)
@@ -275,6 +279,7 @@ Partial Class frmMedium
         'picBanana5
         '
         Me.picBanana5.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana5.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana5.Location = New System.Drawing.Point(2500, 566)
         Me.picBanana5.Name = "picBanana5"
         Me.picBanana5.Size = New System.Drawing.Size(79, 44)
@@ -285,6 +290,7 @@ Partial Class frmMedium
         'picBanana7
         '
         Me.picBanana7.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana7.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana7.Location = New System.Drawing.Point(3500, 566)
         Me.picBanana7.Name = "picBanana7"
         Me.picBanana7.Size = New System.Drawing.Size(79, 44)
@@ -295,6 +301,7 @@ Partial Class frmMedium
         'picBanana8
         '
         Me.picBanana8.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana8.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana8.Location = New System.Drawing.Point(4000, 566)
         Me.picBanana8.Name = "picBanana8"
         Me.picBanana8.Size = New System.Drawing.Size(79, 44)
@@ -306,6 +313,7 @@ Partial Class frmMedium
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox3.Image = Global.frmMinionsMath.My.Resources.Resources.MinionStill
         Me.PictureBox3.Location = New System.Drawing.Point(28, 460)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(114, 153)
@@ -316,6 +324,7 @@ Partial Class frmMedium
         'picBanana1
         '
         Me.picBanana1.BackColor = System.Drawing.Color.Transparent
+        Me.picBanana1.Image = Global.frmMinionsMath.My.Resources.Resources.banana
         Me.picBanana1.Location = New System.Drawing.Point(497, 566)
         Me.picBanana1.Name = "picBanana1"
         Me.picBanana1.Size = New System.Drawing.Size(79, 44)
@@ -327,6 +336,7 @@ Partial Class frmMedium
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox2.Image = Global.frmMinionsMath.My.Resources.Resources.MinionWalk
         Me.PictureBox2.Location = New System.Drawing.Point(28, 460)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(114, 153)
@@ -339,6 +349,7 @@ Partial Class frmMedium
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
+        Me.BackgroundImage = Global.frmMinionsMath.My.Resources.Resources.MediumBG
         Me.ClientSize = New System.Drawing.Size(897, 625)
         Me.Controls.Add(Me.picBanana6)
         Me.Controls.Add(Me.picBanana2)

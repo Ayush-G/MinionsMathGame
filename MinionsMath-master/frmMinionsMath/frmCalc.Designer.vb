@@ -382,7 +382,7 @@ Partial Class frmCalc
         Me.Controls.Add(Me.btn1)
         Me.Controls.Add(Me.calcDisplay)
         Me.Name = "frmCalc"
-        Me.Text = "frmCalc"
+        Me.Text = "Calculator"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

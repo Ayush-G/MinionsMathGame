@@ -88,7 +88,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.lblTitle)
         Me.Name = "MainMenu"
-        Me.Text = "Form1"
+        Me.Text = "Main Menu"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -230,7 +230,7 @@ Partial Class frmShop
         Me.Controls.Add(Me.btnUpSpeed)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmShop"
-        Me.Text = "frmShop"
+        Me.Text = "Shop"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

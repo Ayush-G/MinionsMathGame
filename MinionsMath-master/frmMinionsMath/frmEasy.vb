@@ -132,22 +132,6 @@
                     Score -= 1
                 End If
             End If
-        ElseIf RandomImage = 6 Then
-            If RadioButton7.Checked = True Then
-                lvlScore += 1
-                If UpDblPts = True Then
-                    Score += 2
-                Else
-                    Score += 1
-                End If
-            Else
-                lvlWrong += 1
-                If UpDblPts = True Then
-                    Score -= 2
-                Else
-                    Score -= 1
-                End If
-            End If
         End If
         ' Points given based on upgrades, then pictures move to avoid walking into them again
         If UpWinPts = True Then
@@ -233,7 +217,7 @@
             PictureBox3.Visible = True
             tmrLeft.Enabled = False
             tmrRight.Enabled = False
-            RandomImage = Int(7 * Rnd() + 0)
+            RandomImage = Int(6 * Rnd() + 0)
             Panel1.Visible = True
             If RandomImage = 0 Then
                 picShape.Image = ImageList1.Images(0)
@@ -247,8 +231,6 @@
                 picShape.Image = ImageList1.Images(4)
             ElseIf RandomImage = 5 Then
                 picShape.Image = ImageList1.Images(5)
-            ElseIf RandomImage = 6 Then
-                picShape.Image = ImageList1.Images(6)
             End If
         Else Panel1.Visible = False
         End If
@@ -270,7 +252,7 @@
             tmrRight.Enabled = False
             tmrLeft.Enabled = False
             PictureBox3.Visible = False
-            RandomImage = Int(7 * Rnd() + 0)
+            RandomImage = Int(6 * Rnd() + 0)
             Panel1.Visible = True
             If RandomImage = 0 Then
                 picShape.Image = ImageList1.Images(0)
@@ -284,8 +266,6 @@
                 picShape.Image = ImageList1.Images(4)
             ElseIf RandomImage = 5 Then
                 picShape.Image = ImageList1.Images(5)
-            ElseIf RandomImage = 6 Then
-                picShape.Image = ImageList1.Images(6)
             End If
         End If
     End Sub

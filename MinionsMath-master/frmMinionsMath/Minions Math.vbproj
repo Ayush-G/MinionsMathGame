@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05735487-5F0A-4201-9444-FE494A239F5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>frmMinionsMath.My.MyApplication</StartupObject>
+    <RootNamespace>frmMinionsMath</RootNamespace>
+    <AssemblyName>Minions Math</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\Visual Studio Community 2015\MinionsMathGame\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/frmMinionsMath/</UpdateUrl>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Minions Math.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Minions Math.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5AD1756CF3D0BDB60B091D546CF88655D8DB9034</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>frmMinionsMath_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCalc.Designer.vb">
+      <DependentUpon>frmCalc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEasy.Designer.vb">
+      <DependentUpon>frmEasy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEasy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHard.Designer.vb">
+      <DependentUpon>frmHard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLevel.Designer.vb">
+      <DependentUpon>frmLevel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLevel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLose.Designer.vb">
+      <DependentUpon>frmLose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedium.Designer.vb">
+      <DependentUpon>frmMedium.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedium.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShop.Designer.vb">
+      <DependentUpon>frmShop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWin.Designer.vb">
+      <DependentUpon>frmWin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCalc.resx">
+      <DependentUpon>frmCalc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEasy.resx">
+      <DependentUpon>frmEasy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHard.resx">
+      <DependentUpon>frmHard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLevel.resx">
+      <DependentUpon>frmLevel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLose.resx">
+      <DependentUpon>frmLose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedium.resx">
+      <DependentUpon>frmMedium.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShop.resx">
+      <DependentUpon>frmShop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWin.resx">
+      <DependentUpon>frmWin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="frmMinionsMath_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\easy\Gru%27s_Lab_Minion_Mayhem_ride.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\easy\Minion Walk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\easy\banana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\easy\MinionStill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\easy\GruLab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\Road.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\easy\MediumBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\HardBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\MediumBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MediumBack.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pics\1651529.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

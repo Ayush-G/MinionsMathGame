@@ -32,8 +32,8 @@ Partial Class frmLevel
         Me.btnEasy = New System.Windows.Forms.Button()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.btnQuit = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnShop = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -135,16 +135,6 @@ Partial Class frmLevel
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = False
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(286, 127)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(539, 353)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 23
-        Me.PictureBox1.TabStop = False
-        '
         'btnShop
         '
         Me.btnShop.BackColor = System.Drawing.Color.Gold
@@ -156,6 +146,16 @@ Partial Class frmLevel
         Me.btnShop.TabIndex = 25
         Me.btnShop.Text = "Shop"
         Me.btnShop.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(286, 127)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(539, 353)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 23
+        Me.PictureBox1.TabStop = False
         '
         'frmLevel
         '
@@ -172,7 +172,7 @@ Partial Class frmLevel
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.btnQuit)
         Me.Name = "frmLevel"
-        Me.Text = "frmLevel"
+        Me.Text = "Level Select"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -4,7 +4,7 @@
     Dim rng1, rng2, rng3, rng4, rng5 As Integer 'random numbers
     Dim sec1 As Long
     Dim sec2 As Long
-    Dim shtAns1, shtAns2, shtAns3 As Short 'evaluation variables
+    Dim shtAns1, shtAns2, shtAns3 As Long 'evaluation variables
     Dim rngOp1, rngOp2, rngOp3 As Integer 'operations
     Dim a, b As Integer 'always divisible
     Dim charactersAllowed As String = "1234567890-" 'allowed textbox characters
@@ -74,15 +74,17 @@
         ElseIf lblOp2.Text = "x" Then
             shtAns3 = shtAns1 * shtAns2
         End If
+
         'Checks user's answer
         If txtAnswer.Text = shtAns3 Then
+            lvlScore += 1
             If UpDblPts = True Then 'awards points based on upgrades bought
                 Score += 2
             Else
                 Score += 1
-                End If
-            Else
-                lvlWrong += 1
+            End If
+        Else
+            lvlWrong += 1
                 If UpDblPts = True Then
                     Score -= 2
                 Else

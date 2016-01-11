@@ -39,7 +39,6 @@ Partial Class frmEasy
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.picShape = New System.Windows.Forms.PictureBox()
         Me.btnSubmit = New System.Windows.Forms.Button()
-        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
         Me.RadioButton6 = New System.Windows.Forms.RadioButton()
         Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
@@ -52,6 +51,8 @@ Partial Class frmEasy
         Me.lblPlayerScore = New System.Windows.Forms.Label()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBanana4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBanana6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -192,7 +193,6 @@ Partial Class frmEasy
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Controls.Add(Me.picShape)
         Me.Panel1.Controls.Add(Me.btnSubmit)
-        Me.Panel1.Controls.Add(Me.RadioButton7)
         Me.Panel1.Controls.Add(Me.RadioButton6)
         Me.Panel1.Controls.Add(Me.RadioButton5)
         Me.Panel1.Controls.Add(Me.RadioButton4)
@@ -211,7 +211,6 @@ Partial Class frmEasy
         Me.picShape.Location = New System.Drawing.Point(33, 16)
         Me.picShape.Name = "picShape"
         Me.picShape.Size = New System.Drawing.Size(200, 200)
-        Me.picShape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picShape.TabIndex = 9
         Me.picShape.TabStop = False
         '
@@ -224,18 +223,6 @@ Partial Class frmEasy
         Me.btnSubmit.TabIndex = 8
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = True
-        '
-        'RadioButton7
-        '
-        Me.RadioButton7.AutoSize = True
-        Me.RadioButton7.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton7.Location = New System.Drawing.Point(380, 84)
-        Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(64, 23)
-        Me.RadioButton7.TabIndex = 7
-        Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "Circle"
-        Me.RadioButton7.UseVisualStyleBackColor = True
         '
         'RadioButton6
         '
@@ -367,7 +354,6 @@ Partial Class frmEasy
         Me.ImageList1.Images.SetKeyName(3, "Pentagon.png")
         Me.ImageList1.Images.SetKeyName(4, "Hexagon.png")
         Me.ImageList1.Images.SetKeyName(5, "Octagon.png")
-        Me.ImageList1.Images.SetKeyName(6, "Circle.png")
         '
         'btnQuit
         '
@@ -381,6 +367,30 @@ Partial Class frmEasy
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Black
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(219, 13)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(455, 23)
+        Me.Label1.TabIndex = 20
+        Me.Label1.Text = "Instructions: Use A and D to move and select the answer"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Black
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(270, 36)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(360, 23)
+        Me.Label2.TabIndex = 21
+        Me.Label2.Text = "once the question panel appears. Good luck!"
+        '
         'frmEasy
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -390,6 +400,8 @@ Partial Class frmEasy
         Me.BackgroundImage = Global.frmMinionsMath.My.Resources.Resources.GruLab
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(897, 625)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.lblPlayerScore)
         Me.Controls.Add(Me.lblScore)
@@ -408,7 +420,7 @@ Partial Class frmEasy
         Me.Controls.Add(Me.PictureBox2)
         Me.KeyPreview = True
         Me.Name = "frmEasy"
-        Me.Text = "frmEasy"
+        Me.Text = "Easy"
         Me.TransparencyKey = System.Drawing.Color.PeachPuff
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picBanana4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -440,7 +452,6 @@ Partial Class frmEasy
     Friend WithEvents picBanana4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents RadioButton7 As RadioButton
     Friend WithEvents RadioButton6 As RadioButton
     Friend WithEvents RadioButton5 As RadioButton
     Friend WithEvents RadioButton4 As RadioButton
@@ -455,4 +466,6 @@ Partial Class frmEasy
     Friend WithEvents picShape As PictureBox
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents btnQuit As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class

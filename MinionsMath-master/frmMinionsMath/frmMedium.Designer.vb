@@ -50,6 +50,8 @@ Partial Class frmMedium
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.picBanana1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.picBanana6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picBanana2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -138,7 +140,7 @@ Partial Class frmMedium
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Location = New System.Drawing.Point(9, 77)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(864, 144)
+        Me.Panel1.Size = New System.Drawing.Size(879, 144)
         Me.Panel1.TabIndex = 23
         '
         'Numerator
@@ -163,11 +165,12 @@ Partial Class frmMedium
         '
         'btnSubmit
         '
-        Me.btnSubmit.Location = New System.Drawing.Point(199, 71)
+        Me.btnSubmit.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSubmit.Location = New System.Drawing.Point(199, 61)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
+        Me.btnSubmit.Size = New System.Drawing.Size(75, 40)
         Me.btnSubmit.TabIndex = 21
-        Me.btnSubmit.Text = "Answer"
+        Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = True
         '
         'AnsDen
@@ -344,6 +347,30 @@ Partial Class frmMedium
         Me.PictureBox2.TabIndex = 20
         Me.PictureBox2.TabStop = False
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Black
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(255, 32)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(360, 23)
+        Me.Label3.TabIndex = 37
+        Me.Label3.Text = "once the question panel appears. Good luck!"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Black
+        Me.Label6.Font = New System.Drawing.Font("Calibri", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(204, 9)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(455, 23)
+        Me.Label6.TabIndex = 36
+        Me.Label6.Text = "Instructions: Use A and D to move and select the answer"
+        '
         'frmMedium
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -351,6 +378,8 @@ Partial Class frmMedium
         Me.AutoScroll = True
         Me.BackgroundImage = Global.frmMinionsMath.My.Resources.Resources.MediumBG
         Me.ClientSize = New System.Drawing.Size(897, 625)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.picBanana6)
         Me.Controls.Add(Me.picBanana2)
         Me.Controls.Add(Me.picBanana3)
@@ -368,7 +397,7 @@ Partial Class frmMedium
         Me.Controls.Add(Me.picBanana1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Name = "frmMedium"
-        Me.Text = "frmMedium"
+        Me.Text = "Medium"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.picBanana6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -413,4 +442,6 @@ Partial Class frmMedium
     Friend WithEvents Denominator As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label6 As Label
 End Class

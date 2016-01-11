@@ -1,12 +1,12 @@
 ﻿Public Class frmShop
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Me.Close()
+        Me.Hide()
         My.Forms.MainMenu.Show() 'go to main menu
 
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Me.Close()
+        Me.Hide()
         My.Forms.frmLevel.Show() 'go to level select
     End Sub
 

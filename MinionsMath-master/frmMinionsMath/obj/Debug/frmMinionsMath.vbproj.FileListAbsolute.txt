@@ -37,7 +37,6 @@ E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\
 E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\bin\Debug\frmMinionsMath.exe
 E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\bin\Debug\frmMinionsMath.pdb
 E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\bin\Debug\frmMinionsMath.xml
-E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.vbprojResolveAssemblyReference.cache
 E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.frmCalc.resources
 E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.frmEasy.resources
 E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.frmHard.resources
@@ -49,3 +48,7 @@ E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\
 E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.frmLose.resources
 E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.frmWin.resources
 E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.frmShop.resources
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\bin\Debug\frmMinionsMath.exe.manifest
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\bin\Debug\frmMinionsMath.application
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.exe.manifest
+E:\Visual Studio Community 2015\VB\VBProjects\frmMinionsMath\MinionsMath-master\frmMinionsMath\obj\Debug\frmMinionsMath.application

@@ -112,7 +112,7 @@ Partial Class frmLose
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmLose"
-        Me.Text = "frmLose"
+        Me.Text = "Lose"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

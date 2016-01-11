@@ -112,7 +112,7 @@ Partial Class frmWin
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmWin"
-        Me.Text = "frmWin"
+        Me.Text = "Win"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
